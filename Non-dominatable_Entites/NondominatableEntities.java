@@ -1,4 +1,15 @@
-class NondominateableEntities {
+/**
+ * Two integers, x and y denote the magnityde of two desirable qualities in an entity.
+ * Entity A:x1, y1 is said to dominate entity B:x2, y2 if and only if both x1 > x2, and
+ * y1 > y2. It is possible for two entities to have no dominance between them.
+ * 
+ * For any set of entities, a member entity A is said to be non-dominatable if it is 
+ * not dominated by any entity in that set.
+ *
+ * Given a list of entities L, find the number of non-dominatable entities in the list.
+ */
+
+class NondominatableEntities {
 	static class Entity {
 		public int x;
 		public int y;
