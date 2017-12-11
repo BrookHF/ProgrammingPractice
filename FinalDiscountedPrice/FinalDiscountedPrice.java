@@ -17,6 +17,7 @@ class solution {
 				while(!stack.isEmpty() && stack.peek()[0] >= array[i]) {
 					discount[stack.pop()[1]] = array[i];
 				}
+				stack.push(new int[]{array[i], i});
 			}
 		}
 		int sum = 0;
@@ -32,6 +33,8 @@ class solution {
 
 	public static void main(String[] args) {
 		int[] array = new int[]{5, 1, 3, 4, 6, 2};
+		System.out.println(finalPrice(array));
+		array = new int[]{1, 3, 3, 2, 5};
 		System.out.println(finalPrice(array));
 	}
 }
